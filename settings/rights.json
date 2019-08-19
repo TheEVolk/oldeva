@@ -1,0 +1,76 @@
+{
+	"creator": {
+		"screenname": "Создатель",
+		"right": true,
+		"include": "mainadmin"
+	},
+	"mainadmin": {
+		"screenname": "Главный администратор",
+		"right.ban.admin": true,
+		"right.ban.donat_admin": true,
+		"right.setright.admin": true,
+		"include": "admin"
+	},
+	"donat_moderator": {
+		"screenname": "Донат Модератор",
+		"right.cbaza": false,
+		"right.ban.donat_moderator": false,
+		"include": "moderator"
+	},
+	"admin": {
+		"screenname": "Администратор",
+		"right.antiban": true,
+		"value.maxbantime": -1,
+		"right.ban.moderator": true,
+		"right.setright": true,
+		"right.setright.moderator": true,
+		"right.setright.donat_moderator": true,
+		"right.setright.vip": true,
+		"right.setright.": true,
+		"include": "moderator"
+	},
+	"moderator": {
+		"screenname": "Модератор",
+		"right.kick": true,
+		"right.nick.other": true,
+		"right.otherinfo": true,
+		"right.ban": true,
+		"right.ban.": true,
+		"right.ban.vip": true,
+		"right.ban.donat_moderator": true,
+		"right.razban": true,
+		"right.cbaza": true,
+		"value.maxbantime": 86400,
+		"include": "vip"
+	},
+	"vip": {
+		"screenname": "VIP пользователь",
+		"right.nick": true,
+		"right.clan.create": true,
+		"right.p": true,
+		"right.vipjobs": true,
+		"value.maxlot": 100000,
+		"value.lostchance": 60,
+		"right.changepath": true,
+		"right.changepname": true,
+		"right.smile": true,
+		"right.bget": true,
+		"right.vipt": true,
+		"value.tslots": 15,
+		"right.vipchat": true,
+		"right.vippets": true,
+		"include": "default"
+	},
+	"down": {
+		"screenname": "Даун",
+		"value.maxlot": 100000,
+		"value.lostchance": 100
+	},
+	"default": {
+		"screenname": "Обычный пользователь",
+		"value.maxlot": 10000,
+		"value.lostchance": 70,
+		"value.tslots": 5,
+		"right.baza": true
+	}
+}
